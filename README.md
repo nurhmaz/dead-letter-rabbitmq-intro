@@ -76,4 +76,4 @@ Monitor your application's health using SmallRye Health
 [Reactive Messaging RabbitMQ Connector Reference Documentation](https://quarkus.io/guides/rabbitmq-reference)
 
 ###SmallRye Fault Tolerance
-[SmallRye Fault Tolerance](https://quarkus.io/guides/smallrye-fault-tolerance)
+[Related guide section...](https://quarkus.io/guides/smallrye-fault-tolerance)
