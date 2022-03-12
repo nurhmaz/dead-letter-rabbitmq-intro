@@ -31,7 +31,9 @@ public class EmployeeInfoConsumer {
                     if (employee.getSalary() < 0)
                         throw new RuntimeException("Salary cannot be less than 0");
                     return employeeMessage.ack();
-                });
+                })
+                .onFailure()
+                .invoke(log::error);
     }
 
     private Uni<CompletionStage<Void>> fallbackAfterRetry(Message<JsonObject> employeeMessage) {
